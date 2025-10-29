@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{%block title%} 
+    London Weather
+{%endblock%}
+{%block content%}
+<div class="kieth brendan">
+
+ <p>Description- '{{weather4.current.weather.0.description}}'</p> {# notice that the index notation is not within square brackets but is part of the dot nottion. also notice that you need to specify which dictinoary you are accessing in the list of dictinoaries before you can specify the key. kinda weird but yeah. it is its own language, kinda djanoo custom made one for templates #}
+    <p>Temperature- {{weather4.current.temp}} Kelvin - subtract 273.15 for celsius</p>   
+    <p>Wind Speed- {{weather4.current.wind_speed}} Knots</p>   
+    <p>Visability- {{weather4.current.visibility}} Metres</p>
+    <a href="/"> <button style="font-size: medium">Home</button></a>
+    </div>
+{%endblock%}

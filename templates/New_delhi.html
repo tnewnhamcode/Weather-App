@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{%block title%} New_delhi {%endblock%}
+{% block content %}
+    <div class="kieth brendan">
+        <br>
+        <h1>New Delhi</h1>
+        <p>Description- '{{weather2.current.weather.0.description}}'</p>
+        <p>Temperature- {{weather2.current.temp}} Kelvin </p>
+        <p>Wind Speed- {{weather2.current.wind_speed}} Knots</p>
+        <br>
+        <a href="/">
+            <button style="font-size: medium;">Home</button>
+        </a>
+    </div>
+{%endblock%}
