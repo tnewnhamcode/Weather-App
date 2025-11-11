@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent    #its a path object imported
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("Django Secret_Key") 
+SECRET_KEY = os.getenv("Django_Secret_Key") 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,6 +144,7 @@ ISTANBUL_API_URL=os.getenv("Istanbul")
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
 
