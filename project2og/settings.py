@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent    #its a path object imported
 SECRET_KEY = os.getenv("Django_Secret_Key") 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [tom-newnham-weather-app1.netlify.app]
 
 
 # Application definition
@@ -144,6 +144,7 @@ ISTANBUL_API_URL=os.getenv("Istanbul")
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
 
