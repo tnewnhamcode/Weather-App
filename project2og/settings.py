@@ -131,7 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 WEATHER_API_KEY= os.getenv("Thing")
 
-print(WEATHER_API_KEY) 
+
 
 WEATHER_API_URL= os.getenv("Thing1")
 
@@ -146,4 +146,4 @@ BANGKOK_API_URL=os.getenv("Bangkok")
 LISBON_API_URL=os.getenv("Lisbon") 
 
 
-#we get each other so  could have helped her better than others (bad)
+
