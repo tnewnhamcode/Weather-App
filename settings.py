@@ -137,12 +137,13 @@ WEATHER_API_URL= os.getenv("Thing1")
 
 MOROCCO_API_URL=os.getenv("Morocco") 
 
-NEW_DELHI_API_URL=os.getenv("New Delhi") 
+NEW_DELHI_API_URL=os.getenv("New_Delhi") 
 
 ISTANBUL_API_URL=os.getenv("Istanbul") 
 
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
