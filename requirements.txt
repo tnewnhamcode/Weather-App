@@ -11,3 +11,4 @@ tzdata==2025.2
 urllib3==2.5.0
 gunicorn
 psycopg2-binary
+whitenoise
