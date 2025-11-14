@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent    #its a path object imported
 SECRET_KEY = 'django-insecure-eu&%03=8n+0mqvo*qduxe@#nl7zeyl*louert2$4hcw)$%fm(#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["weather-app.onrender.com"]
 
@@ -144,6 +144,7 @@ ISTANBUL_API_URL=os.getenv("Istanbul")
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
 
