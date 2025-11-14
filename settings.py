@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'project2og.urls'
@@ -144,6 +145,7 @@ ISTANBUL_API_URL=os.getenv("Istanbul")
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
 
