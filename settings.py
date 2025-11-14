@@ -124,6 +124,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS =[
     BASE_DIR/'static'
 ]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -145,6 +146,7 @@ ISTANBUL_API_URL=os.getenv("Istanbul")
 BANGKOK_API_URL=os.getenv("Bangkok") 
 
 LISBON_API_URL=os.getenv("Lisbon") 
+
 
 
 
