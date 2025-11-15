@@ -172,12 +172,6 @@ class WeatherViewSet(viewsets.ModelViewSet):    #the viewpoint in DRF defines th
 
 
 
-print (get_data())
-print (get_data1())
-print (get_data2())
-print (get_data3())
-print (get_data4())
-print (get_data5())
 
 
 
