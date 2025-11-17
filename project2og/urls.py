@@ -33,7 +33,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('weather/', weather.views.MyModelView.as_view(), name='weather-items'),  # URL for MyModelView
     path('weather/', include(router.urls)),  #in this context routers automate the process of giving a url to a viewset (view with method for deleting, editing, creating data from an api all in one) 
-    #shit or whatever)
+    
     path('weather1/', weather.views.WeatherViewSet.as_view({'get': 'weatherView'}), name='London_weather'),
     path('weather2/', weather.views.WeatherViewSet.as_view({'get': 'weatherView1'}), name='Morocco_weather'),
     path('weather3/', weather.views.WeatherViewSet.as_view({'get': 'weatherView2'}), name='NewDehli_weather'),
@@ -42,4 +42,6 @@ urlpatterns = [
     path('weather6/', weather.views.WeatherViewSet.as_view({'get': 'weatherView5'}), name='Lisbon_weather'),
     #you gotta say as_view() at the end of calling classed based views la (it instatiates it la and the class has got to be given an instance la) 
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
