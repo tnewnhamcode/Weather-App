@@ -23,7 +23,7 @@ from rest_framework import routers
 import weather
 from . import settings
 from django.conf.urls.static import static
-{% load static %}
+
 
 router = routers.DefaultRouter()    #Creates a router instance. The `DefaultRouter`
 #automatically creates API endpoints for standard set operations (create, read, update, delete).
@@ -46,6 +46,7 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 
 
